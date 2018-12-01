@@ -174,13 +174,13 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>将博客文章从wordpress转移到hexo过程中遇到了个小问题。从wordpress导出的文章，导入到hexo后，发现<code>source/_post/</code>下多了一堆十六进制混杂着英文作为文件名的<code>.md</code>文件。其实，注意观察我们也可以知道，wordpress导入文章到hexo实际上是将一个<code>xml</code>文件中的各文章转换成<code>source/_post/</code>目录下的<code>Markdown</code>格式的<code>md</code>文件，而这些文件名的命名则是根据文章的<code>title</code>命名的，而十六进制的出现是因为文章标题中的中文所致。在wordpress转移到hexo的过程中，我们的文章难免会出现些问题，我们可能还需要对导入的文章修改一下。但是这十六进制的文件名不利于我们辨认哪个文件是我们的需要修改的文件。其实，我们完全可以根据自己的需要打开文件，查看文件中的<code>title</code>进行手工重命名文件。但有个问题，如果我的文章都是中文标题，而且文章数量庞大，一大堆以十六进制作为文件名的文件啊。前段时间学了Linux的<code>shell</code>编程，这下子用的上了，写了如下脚本：<a id="more"></a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">#!/bin/bash</span><br><span class="line">#Author: Coande  Email: e12e@qq.com</span><br><span class="line">#rename the md file of hexo</span><br><span class="line"></span><br><span class="line">#将当前目录下的文件列表保存到“filename.list”文件中</span><br><span class="line">ls &gt; filename.list</span><br><span class="line">#依次读取“filename.list”中的文件名</span><br><span class="line">for filename in $(cat filename.list)</span><br><span class="line">	do</span><br><span class="line">		#判断当前读取到的文件名是否本脚本和本脚本生成的文件，不是才执行</span><br><span class="line">		if [ &quot;$filename&quot; != &quot;rename.sh&quot; -a &quot;$filename&quot; != &quot;filename.list&quot; ]</span><br><span class="line">			then</span><br><span class="line">				#获得&lt;filename&gt;对应文件中的title的值，并对title值中的空格、“/”、“!”做了处理</span><br><span class="line">				title=$(cat $filename | grep title | sed -n &apos;1p&apos; | cut -d &quot;:&quot; -f 2 |  sed -e &apos;s/ /_/g ; s/^_//g ; s/\//-/g ; s/\!/\\!/g&apos;)</span><br><span class="line">				#过滤掉文件内容中没有title的文件和文件名正常的文件</span><br><span class="line">				if [ -n &quot;$title&quot; -a &quot;$filename&quot; != &quot;$title.md&quot; ]</span><br><span class="line">					then</span><br><span class="line">					#将&lt;filename&gt;文件名重命名为title的值.md</span><br><span class="line">					mv $filename $title.md</span><br><span class="line">				fi</span><br><span class="line">		fi</span><br><span class="line">	done</span><br><span class="line">rm -f filename.list</span><br><span class="line">echo done!</span><br></pre></td></tr></table></figure></p>
+        <p>将博客文章从wordpress转移到hexo过程中遇到了个小问题。从wordpress导出的文章，导入到hexo后，发现<code>source/_post/</code>下多了一堆十六进制混杂着英文作为文件名的<code>.md</code>文件。其实，注意观察我们也可以知道，wordpress导入文章到hexo实际上是将一个<code>xml</code>文件中的各文章转换成<code>source/_post/</code>目录下的<code>Markdown</code>格式的<code>md</code>文件，而这些文件名的命名则是根据文章的<code>title</code>命名的，而十六进制的出现是因为文章标题中的中文所致。在wordpress转移到hexo的过程中，我们的文章难免会出现些问题，我们可能还需要对导入的文章修改一下。但是这十六进制的文件名不利于我们辨认哪个文件是我们的需要修改的文件。其实，我们完全可以根据自己的需要打开文件，查看文件中的<code>title</code>进行手工重命名文件。但有个问题，如果我的文章都是中文标题，而且文章数量庞大，一大堆以十六进制作为文件名的文件啊。前段时间学了Linux的<code>shell</code>编程，这下子用的上了，写了如下脚本：<a id="more"></a><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"><span class="comment">#Author: Coande  Email: e12e@qq.com</span></span><br><span class="line"><span class="comment">#rename the md file of hexo</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#将当前目录下的文件列表保存到“filename.list”文件中</span></span><br><span class="line">ls &gt; filename.list</span><br><span class="line"><span class="comment">#依次读取“filename.list”中的文件名</span></span><br><span class="line"><span class="keyword">for</span> filename <span class="keyword">in</span> $(cat filename.list)</span><br><span class="line">	<span class="keyword">do</span></span><br><span class="line">		<span class="comment">#判断当前读取到的文件名是否本脚本和本脚本生成的文件，不是才执行</span></span><br><span class="line">		<span class="keyword">if</span> [ <span class="string">"<span class="variable">$filename</span>"</span> != <span class="string">"rename.sh"</span> -a <span class="string">"<span class="variable">$filename</span>"</span> != <span class="string">"filename.list"</span> ]</span><br><span class="line">			<span class="keyword">then</span></span><br><span class="line">				<span class="comment">#获得&lt;filename&gt;对应文件中的title的值，并对title值中的空格、“/”、“!”做了处理</span></span><br><span class="line">				title=$(cat <span class="variable">$filename</span> | grep title | sed -n <span class="string">'1p'</span> | cut -d <span class="string">":"</span> -f 2 |  sed -e <span class="string">'s/ /_/g ; s/^_//g ; s/\//-/g ; s/\!/\\!/g'</span>)</span><br><span class="line">				<span class="comment">#过滤掉文件内容中没有title的文件和文件名正常的文件</span></span><br><span class="line">				<span class="keyword">if</span> [ -n <span class="string">"<span class="variable">$title</span>"</span> -a <span class="string">"<span class="variable">$filename</span>"</span> != <span class="string">"<span class="variable">$title</span>.md"</span> ]</span><br><span class="line">					<span class="keyword">then</span></span><br><span class="line">					<span class="comment">#将&lt;filename&gt;文件名重命名为title的值.md</span></span><br><span class="line">					mv <span class="variable">$filename</span> <span class="variable">$title</span>.md</span><br><span class="line">				<span class="keyword">fi</span></span><br><span class="line">		<span class="keyword">fi</span></span><br><span class="line">	<span class="keyword">done</span></span><br><span class="line">rm -f filename.list</span><br><span class="line"><span class="built_in">echo</span> <span class="keyword">done</span>!</span><br></pre></td></tr></table></figure></p>
 <p><br><br>运行脚本前：<br><img src="http://i3.tietuku.com/1d9003e048e3e674.jpg" alt="运行脚本前图片"></p>
 <p>运行脚本后：<br><img src="http://i3.tietuku.com/9171637475818a99.jpg" alt="运行脚本后图片"><br><br></p>
 <p>这是我的第一个自己想自己写的shell脚本，写完运行成功解决了自己的问题，想想都有点小激动^_^，感觉Linux太强大了。第一次写哈，难免会有想得不周全的地方，有问题欢迎指出。<br><br></p>
 <p><strong>Tips</strong>：将上面代码复制到hexo博客的<code>source/_post</code>下<code>新建</code>的一个以<code>rename.sh</code>作为文件名的文件中，命令行中执行<code>bash ./rename.sh</code> 运行脚本即可。运行后提示<code>done!</code>即表示成功执行了。Windows中也可以直接双击该文件来执行。</p>
 <hr>
-<p>2015/8/4更新：犯傻了，前面忘记了ls可以用通配符将<code>.md</code>文件单独筛选出来了，本来很简单的想得复杂了。这样又可以省去一个判断，快了点……<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">#!/bin/bash</span><br><span class="line">#Author: Coande  Email: e12e@qq.com</span><br><span class="line">ls *.md &gt; filename.list</span><br><span class="line">for filename in $(cat filename.list)</span><br><span class="line">	do</span><br><span class="line">		title=$(cat $filename | grep title | sed -n &apos;1p&apos; | cut -d &quot;:&quot; -f 2 |  sed -e &apos;s/ /_/g ; s/^_//g ; s/\//-/g ; s/\!/\\!/g&apos;)</span><br><span class="line">		if [ -n &quot;$title&quot; -a &quot;$filename&quot; != &quot;$title.md&quot; ]</span><br><span class="line">			then</span><br><span class="line">				mv $filename $title.md</span><br><span class="line">		fi</span><br><span class="line">	done</span><br><span class="line">rm -f filename.list</span><br><span class="line">echo done!</span><br></pre></td></tr></table></figure></p>
+<p>2015/8/4更新：犯傻了，前面忘记了ls可以用通配符将<code>.md</code>文件单独筛选出来了，本来很简单的想得复杂了。这样又可以省去一个判断，快了点……<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"><span class="comment">#Author: Coande  Email: e12e@qq.com</span></span><br><span class="line">ls *.md &gt; filename.list</span><br><span class="line"><span class="keyword">for</span> filename <span class="keyword">in</span> $(cat filename.list)</span><br><span class="line">	<span class="keyword">do</span></span><br><span class="line">		title=$(cat <span class="variable">$filename</span> | grep title | sed -n <span class="string">'1p'</span> | cut -d <span class="string">":"</span> -f 2 |  sed -e <span class="string">'s/ /_/g ; s/^_//g ; s/\//-/g ; s/\!/\\!/g'</span>)</span><br><span class="line">		<span class="keyword">if</span> [ -n <span class="string">"<span class="variable">$title</span>"</span> -a <span class="string">"<span class="variable">$filename</span>"</span> != <span class="string">"<span class="variable">$title</span>.md"</span> ]</span><br><span class="line">			<span class="keyword">then</span></span><br><span class="line">				mv <span class="variable">$filename</span> <span class="variable">$title</span>.md</span><br><span class="line">		<span class="keyword">fi</span></span><br><span class="line">	<span class="keyword">done</span></span><br><span class="line">rm -f filename.list</span><br><span class="line"><span class="built_in">echo</span> <span class="keyword">done</span>!</span><br></pre></td></tr></table></figure></p>
 
       
 
@@ -347,7 +347,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2017 Coande
+    		&copy; 2018 Coande
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
@@ -438,6 +438,22 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">CentOS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">网络配置</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">奖品</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">Android</a>
               </li>
              
@@ -450,39 +466,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">CentOS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">网络配置</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">奖品</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">hping</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Fiddler</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">抓包</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">抓取手机数据</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">礼品</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Java，equals</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -498,7 +490,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Java，equals</a>
+                <a href="javascript:void(0)" class="js-tag color3">LandLeg</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">天翼</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -510,11 +506,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">LandLeg</a>
+                <a href="javascript:void(0)" class="js-tag color3">Fiddler</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">天翼</a>
+                <a href="javascript:void(0)" class="js-tag color3">抓包</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -526,15 +522,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Mars</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">笔记</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">面向对象</a>
+                <a href="javascript:void(0)" class="js-tag color2">抓取手机数据</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -543,10 +531,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">局域网</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">双系统</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -559,6 +543,22 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">jre</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">翻墙</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">goagent</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">VPN</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">代理</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -582,27 +582,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">翻墙</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">goagent</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">VPN</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">代理</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">webmin</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">技巧</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -618,7 +598,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">生活</a>
+                <a href="javascript:void(0)" class="js-tag color3">技巧</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -634,11 +614,35 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">生活</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">高质量图片</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">hosts</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">免费域名</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">慕课网</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">视频解析</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">下载工具</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">音乐</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -654,27 +658,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">高质量图片</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">慕课网</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">视频解析</a>
+                <a href="javascript:void(0)" class="js-tag color5">博客恢复</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">Font Awesome</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">音乐</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">下载工具</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -690,23 +678,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">树莓派</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">Dreamweaver</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">shell</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">博客恢复</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">驱动</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">shell</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -718,15 +698,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">IDE</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">在线编程</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Photoshop</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">笔记</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -738,7 +718,27 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
+                <a href="javascript:void(0)" class="js-tag color4">IDE</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">在线编程</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">双系统</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">树莓派</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Mars</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">面向对象</a>
               </li>
             
             <div class="clearfix"></div>
