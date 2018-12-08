@@ -87,7 +87,7 @@ backup:
   type: git
   theme: landscape,yilia
   repository:
-    github: git@github.com:Coande/coande.github.io.git,hexo
+    origin: git@github.com:Coande/coande.github.io.git,hexo
   
 jsonContent:
     meta: false
