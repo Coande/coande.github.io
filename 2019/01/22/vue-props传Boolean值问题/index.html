@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="http://e12e.com">
   <title>vue props传Boolean值问题 | Coande的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="一直以为父组件为子组件传递Boolean值可以这样传：1&amp;lt;component disabled /&amp;gt; 今天偶然发现需要满足一定的条件才行。">
+  <meta name="description" content="一直以为父组件为子组件传递true（Boolean值）可以这样传：1&amp;lt;component disabled /&amp;gt; 今天偶然发现需要满足一定的条件才行。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="vue props传Boolean值问题">
 <meta property="og:url" content="http://e12e.com/2019/01/22/vue-props传Boolean值问题/index.html">
 <meta property="og:site_name" content="Coande的博客">
-<meta property="og:description" content="一直以为父组件为子组件传递Boolean值可以这样传：1&amp;lt;component disabled /&amp;gt; 今天偶然发现需要满足一定的条件才行。">
+<meta property="og:description" content="一直以为父组件为子组件传递true（Boolean值）可以这样传：1&amp;lt;component disabled /&amp;gt; 今天偶然发现需要满足一定的条件才行。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:updated_time" content="2019-01-22T10:08:20.118Z">
+<meta property="og:updated_time" content="2019-01-23T00:54:53.453Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vue props传Boolean值问题">
-<meta name="twitter:description" content="一直以为父组件为子组件传递Boolean值可以这样传：1&amp;lt;component disabled /&amp;gt; 今天偶然发现需要满足一定的条件才行。">
+<meta name="twitter:description" content="一直以为父组件为子组件传递true（Boolean值）可以这样传：1&amp;lt;component disabled /&amp;gt; 今天偶然发现需要满足一定的条件才行。">
   
     <link rel="alternative" href="/atom.xml" title="Coande的博客" type="application/atom+xml">
   
@@ -170,12 +170,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>一直以为父组件为子组件传递Boolean值可以这样传：<br><figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">&lt;component disabled /&gt;</span></span><br></pre></td></tr></table></figure></p>
+        <p>一直以为父组件为子组件传递<code>true</code>（Boolean值）可以这样传：<br><figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">&lt;component disabled /&gt;</span></span><br></pre></td></tr></table></figure></p>
 <p>今天偶然发现需要满足一定的条件才行。</p>
 <a id="more"></a>
-<p>以下方式获取到都是一个空字符串（相当于false）</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">props:</span> <span class="string">&#123;</span></span><br><span class="line"><span class="attr">  disabled:</span> <span class="string">&#123;</span></span><br><span class="line"><span class="attr">    type:</span> <span class="string">[Boolean,</span> <span class="string">String],</span></span><br><span class="line">	<span class="attr">default:</span> <span class="literal">false</span></span><br><span class="line">  <span class="string">&#125;</span></span><br><span class="line"><span class="string">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="attr">props:</span> <span class="string">&#123;</span></span><br><span class="line"><span class="attr">  disabled:</span> <span class="string">&#123;</span></span><br><span class="line">	<span class="attr">default:</span> <span class="literal">false</span></span><br><span class="line">  <span class="string">&#125;</span></span><br><span class="line"><span class="string">&#125;</span></span><br></pre></td></tr></table></figure>
-<p>需要设置验证类型仅为Boolean时才能得到预想的Boolean结果：</p>
+<p>这个和子组件的pros验证有关系，以下方式获取到都是一个空字符串（相当于false）</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">props:</span> <span class="string">&#123;</span></span><br><span class="line"><span class="attr">  disabled:</span> <span class="string">&#123;</span></span><br><span class="line"><span class="attr">    type:</span> <span class="string">[Boolean,</span> <span class="string">String],</span></span><br><span class="line"><span class="attr">    default:</span> <span class="literal">false</span></span><br><span class="line">  <span class="string">&#125;</span></span><br><span class="line"><span class="string">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="attr">props:</span> <span class="string">&#123;</span></span><br><span class="line"><span class="attr">  disabled:</span> <span class="string">&#123;</span></span><br><span class="line"><span class="attr">    default:</span> <span class="literal">false</span></span><br><span class="line">  <span class="string">&#125;</span></span><br><span class="line"><span class="string">&#125;</span></span><br></pre></td></tr></table></figure>
+<p>需要设置验证类型仅为Boolean时才能得到true（Boolean值）结果：</p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">props:</span> <span class="string">&#123;</span></span><br><span class="line"><span class="attr">  disabled:</span> <span class="string">&#123;</span></span><br><span class="line"><span class="attr">    type:</span> <span class="string">[Boolean],</span></span><br><span class="line">	<span class="attr">default:</span> <span class="literal">false</span></span><br><span class="line">  <span class="string">&#125;</span></span><br><span class="line"><span class="string">&#125;</span></span><br></pre></td></tr></table></figure>
       
 
