@@ -6,24 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://e12e.com">
-  <title>代理服务器导致能上QQ而不能打开网页 | Coande的博客</title>
+  <title>electron项目打包后成功安装但无法运行 | Coande的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="前天回到学校，打开电脑连接宽带，然后……能连接上，但是打不开网页，在别的电脑能登陆并打开网页。这下子就知道是我的电脑的问题了。连接宽带后我上了下QQ，居然能够成功登录。这情况我的直觉是DNS的问题，但是经过几次修改DNS，还是打不开网页。我ping一个域名却能ping到，这又不是DNS的问题了。用360断网急救箱也修复也不行，360浏览器和IE都不行，清空缓存也是不行。这又是为什么呢？">
-<meta name="keywords" content="DNS,Internet选项,代理服务器">
+  <meta name="description" content="前两天遇到一台win8的电脑，electron项目打包后都安装成功了，但是运行不起来。直接命令行调用exe什么输出都没有。于是怀疑是打包后不适用于该系统，尝试给这台电脑配个开发环境。一切准备好，想要安装依赖的时候，发现npm都不好使了，提示socket:(10107)系统调用失败，执行以下命令重置网络环境来解决这个问题：1netsh winsock reset 提示重启，但实测不重启也解决问题了。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="代理服务器导致能上QQ而不能打开网页">
-<meta property="og:url" content="http://e12e.com/2015/03/08/代理服务器导致能上QQ而不能打开网页/index.html">
+<meta property="og:title" content="electron项目打包后成功安装但无法运行">
+<meta property="og:url" content="http://e12e.com/2019/01/27/electron项目打包后成功安装但无法运行/index.html">
 <meta property="og:site_name" content="Coande的博客">
-<meta property="og:description" content="前天回到学校，打开电脑连接宽带，然后……能连接上，但是打不开网页，在别的电脑能登陆并打开网页。这下子就知道是我的电脑的问题了。连接宽带后我上了下QQ，居然能够成功登录。这情况我的直觉是DNS的问题，但是经过几次修改DNS，还是打不开网页。我ping一个域名却能ping到，这又不是DNS的问题了。用360断网急救箱也修复也不行，360浏览器和IE都不行，清空缓存也是不行。这又是为什么呢？">
+<meta property="og:description" content="前两天遇到一台win8的电脑，electron项目打包后都安装成功了，但是运行不起来。直接命令行调用exe什么输出都没有。于是怀疑是打包后不适用于该系统，尝试给这台电脑配个开发环境。一切准备好，想要安装依赖的时候，发现npm都不好使了，提示socket:(10107)系统调用失败，执行以下命令重置网络环境来解决这个问题：1netsh winsock reset 提示重启，但实测不重启也解决问题了。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://7xi6qe.com1.z0.glb.clouddn.com/2015/03/08/截图20150308123821.png">
-<meta property="og:image" content="http://7xi6qe.com1.z0.glb.clouddn.com/2015/03/08/截图20150308124536.png">
-<meta property="og:image" content="http://7xi6qe.com1.z0.glb.clouddn.com/2015/03/08/截图20150308124701.png">
-<meta property="og:updated_time" content="2015-08-03T13:16:05.070Z">
+<meta property="og:updated_time" content="2019-01-27T14:53:14.970Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="代理服务器导致能上QQ而不能打开网页">
-<meta name="twitter:description" content="前天回到学校，打开电脑连接宽带，然后……能连接上，但是打不开网页，在别的电脑能登陆并打开网页。这下子就知道是我的电脑的问题了。连接宽带后我上了下QQ，居然能够成功登录。这情况我的直觉是DNS的问题，但是经过几次修改DNS，还是打不开网页。我ping一个域名却能ping到，这又不是DNS的问题了。用360断网急救箱也修复也不行，360浏览器和IE都不行，清空缓存也是不行。这又是为什么呢？">
-<meta name="twitter:image" content="http://7xi6qe.com1.z0.glb.clouddn.com/2015/03/08/截图20150308123821.png">
+<meta name="twitter:title" content="electron项目打包后成功安装但无法运行">
+<meta name="twitter:description" content="前两天遇到一台win8的电脑，electron项目打包后都安装成功了，但是运行不起来。直接命令行调用exe什么输出都没有。于是怀疑是打包后不适用于该系统，尝试给这台电脑配个开发环境。一切准备好，想要安装依赖的时候，发现npm都不好使了，提示socket:(10107)系统调用失败，执行以下命令重置网络环境来解决这个问题：1netsh winsock reset 提示重启，但实测不重启也解决问题了。">
   
     <link rel="alternative" href="/atom.xml" title="Coande的博客" type="application/atom+xml">
   
@@ -155,29 +150,28 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-代理服务器导致能上QQ而不能打开网页" class="article article-type-post " itemscope="" itemprop="blogPost">
+            <article id="post-electron项目打包后成功安装但无法运行" class="article article-type-post " itemscope="" itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      代理服务器导致能上QQ而不能打开网页
+      electron项目打包后成功安装但无法运行
     </h1>
   
 
         
-        <a href="/2015/03/08/代理服务器导致能上QQ而不能打开网页/" class="archive-article-date">
-  	<time datetime="2015-03-08T06:35:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-03-08</time>
+        <a href="/2019/01/27/electron项目打包后成功安装但无法运行/" class="archive-article-date">
+  	<time datetime="2019-01-27T14:34:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-01-27</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>前天回到学校，打开电脑连接宽带，然后……能连接上，但是打不开网页，在别的电脑能登陆并打开网页。这下子就知道是我的电脑的问题了。连接宽带后我上了下QQ，居然能够成功登录。这情况我的直觉是DNS的问题，但是经过几次修改DNS，还是打不开网页。我ping一个域名却能ping到，这又不是DNS的问题了。用360断网急救箱也修复也不行，360浏览器和IE都不行，清空缓存也是不行。这又是为什么呢？<a id="more"></a></p>
-<p>后来，认真的看了下IE报出的错误信息，才意识到了点东西：<br><img src="http://7xi6qe.com1.z0.glb.clouddn.com/2015/03/08/截图20150308123821.png" alt="代理服务器没有响应"></p>
-<p>在“Internet选项”的“连接”标签下有一个代理服务器的”设置“，进入设置后取消代理服务器下的勾勾即可。<br><img src="http://7xi6qe.com1.z0.glb.clouddn.com/2015/03/08/截图20150308124536.png" alt="代理服务器设置"><br><img src="http://7xi6qe.com1.z0.glb.clouddn.com/2015/03/08/截图20150308124701.png" alt="代理服务器设置2"></p>
+        <p>前两天遇到一台win8的电脑，electron项目打包后都安装成功了，但是运行不起来。直接命令行调用exe什么输出都没有。于是怀疑是打包后不适用于该系统，尝试给这台电脑配个开发环境。一切准备好，想要安装依赖的时候，发现<code>npm</code>都不好使了，提示<code>socket:(10107)系统调用失败</code>，执行以下命令重置网络环境来解决这个问题：<br><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">netsh winsock reset</span></span><br></pre></td></tr></table></figure></p>
+<p>提示重启，但实测不重启也解决问题了。再运行npm就正常了，再测试下之前安装好的electron项目发现也正常运行了，开发环境也可以撤了。</p>
 
       
 
@@ -186,37 +180,7 @@
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">DNS</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Internet选项</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">代理服务器</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
       
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/碎片//" class="article-tag-list-link color3">碎片</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
 
       
 
@@ -266,7 +230,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://e12e.com/2015/03/08/代理服务器导致能上QQ而不能打开网页/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://e12e.com/2019/01/27/electron项目打包后成功安装但无法运行/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -280,18 +244,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2015/03/09/一键金牌网吧代理/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          一键金牌网吧代理
-        
-      </div>
-    </a>
   
-  
-    <a href="/2015/02/19/过年啦，新年快乐！/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">过年啦，新年快乐！</div>
+    <a href="/2019/01/22/vue-props传Boolean值问题/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">vue props传Boolean值问题</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -321,7 +276,7 @@
   
 
   
-  <div id="SOHUCS" sid="代理服务器导致能上QQ而不能打开网页"></div> 
+  <div id="SOHUCS" sid="electron项目打包后成功安装但无法运行"></div> 
 <script charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/changyan.js"></script>
 <script type="text/javascript">
     window.changyan.api.config({
