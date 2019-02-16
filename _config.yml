@@ -28,6 +28,7 @@ i18n_dir: :lang
 skip_render:
     - baidu_verify_kwgJiQlm3N.html
     - 🐯🐯.ws/**
+    - pay2me/**
     - root.txt
 
 # Writing
