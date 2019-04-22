@@ -16,17 +16,17 @@
 <meta property="og:site_name" content="Coande的博客">
 <meta property="og:description" content="现代科技发展得如此迅速，计算机设备也普及了，身边也可能有几台电脑，那么你想不想像学校电脑室那样拥有局域网功能，可以进行文件分享、玩游戏等等？这篇文章就以本人的经历分享一下我搭建局域网的方法。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://7xi6qe.com1.z0.glb.clouddn.com/2015/02/12/20150211225711.png">
-<meta property="og:image" content="http://7xi6qe.com1.z0.glb.clouddn.com/2015/02/12/20150211231039.png">
-<meta property="og:image" content="http://7xi6qe.com1.z0.glb.clouddn.com/2015/02/12/20150211231300.png">
-<meta property="og:image" content="http://7xi6qe.com1.z0.glb.clouddn.com/2015/02/12/20150211231755.png">
-<meta property="og:image" content="http://7xi6qe.com1.z0.glb.clouddn.com/2015/02/12/20150211232122.png">
-<meta property="og:image" content="http://7xi6qe.com1.z0.glb.clouddn.com/2015/02/12/20150212102038.png">
-<meta property="og:updated_time" content="2015-08-03T13:29:30.212Z">
+<meta property="og:image" content="http://qiniu.e12e.com/2015/02/12/20150211225711.png">
+<meta property="og:image" content="http://qiniu.e12e.com/2015/02/12/20150211231039.png">
+<meta property="og:image" content="http://qiniu.e12e.com/2015/02/12/20150211231300.png">
+<meta property="og:image" content="http://qiniu.e12e.com/2015/02/12/20150211231755.png">
+<meta property="og:image" content="http://qiniu.e12e.com/2015/02/12/20150211232122.png">
+<meta property="og:image" content="http://qiniu.e12e.com/2015/02/12/20150212102038.png">
+<meta property="og:updated_time" content="2019-04-22T17:08:00.204Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="搭建局域网">
 <meta name="twitter:description" content="现代科技发展得如此迅速，计算机设备也普及了，身边也可能有几台电脑，那么你想不想像学校电脑室那样拥有局域网功能，可以进行文件分享、玩游戏等等？这篇文章就以本人的经历分享一下我搭建局域网的方法。">
-<meta name="twitter:image" content="http://7xi6qe.com1.z0.glb.clouddn.com/2015/02/12/20150211225711.png">
+<meta name="twitter:image" content="http://qiniu.e12e.com/2015/02/12/20150211225711.png">
   
     <link rel="alternative" href="/atom.xml" title="Coande的博客" type="application/atom+xml">
   
@@ -182,9 +182,9 @@
 <a id="more"></a>
 <p><strong>第一种情况：两台或多台电脑使用有线网络搭建局域网</strong></p>
 <ol>
-<li>首先确保需要搭建局域网的电脑的工作组相同。<br>右键点击我的电脑<br><img src="http://7xi6qe.com1.z0.glb.clouddn.com/2015/02/12/20150211225711.png" alt="工作组"><br>若不同工作组，点击“更改设置”，在计算机名选项卡下选“更改”，即可更改工作组。工作组名称可以随便取，需要搭建局域网的电脑取相同名称即可。</li>
-<li>设置局域网ip<br>右键点击任务栏右边的网络图标，选择“打开网络和共享中心”，选择“更改适配器设置”，选中你网卡对应的“本地连接”（win8为“以太网”），右键属性，在“网络”选项卡下找到“Internet协议版本4（TCP/IPV4）”，点“属性”，“选择下面的ip地址”，ip地址栏输入192.168.1.x（x为0~255之间的任意数字），不同机器的ip地址不要相同，其它不用更改，直接“确定”“关闭”。<br><img src="http://7xi6qe.com1.z0.glb.clouddn.com/2015/02/12/20150211231039.png" alt="打开网络和共享中心"><br><img src="http://7xi6qe.com1.z0.glb.clouddn.com/2015/02/12/20150211231300.png" alt="20150211231300"><br><img src="http://7xi6qe.com1.z0.glb.clouddn.com/2015/02/12/20150211231755.png" alt="选中IPv4"><br><img src="http://7xi6qe.com1.z0.glb.clouddn.com/2015/02/12/20150211232122.png" alt="设置IP"></li>
-<li>打开网络发现<br>同样是右键点击任务栏右边的网络图标，选择“打开网络和共享中心”，点击“高级共享设置”进入设置页面“启用网络发现”后保存即可。有些人可能保存完后下次打开一看还是没开启发现，这个是因为没开启SSDP Discovery服务。Win+R快捷键打开“运。行”，输入services.msc然后Enter，找到SSDP Discovery后右键“属性”，启动类型更改为“自动”即可。<br><img src="http://7xi6qe.com1.z0.glb.clouddn.com/2015/02/12/20150212102038.png" alt="更改高级共享设置"></li>
+<li>首先确保需要搭建局域网的电脑的工作组相同。<br>右键点击我的电脑<br><img src="http://qiniu.e12e.com/2015/02/12/20150211225711.png" alt="工作组"><br>若不同工作组，点击“更改设置”，在计算机名选项卡下选“更改”，即可更改工作组。工作组名称可以随便取，需要搭建局域网的电脑取相同名称即可。</li>
+<li>设置局域网ip<br>右键点击任务栏右边的网络图标，选择“打开网络和共享中心”，选择“更改适配器设置”，选中你网卡对应的“本地连接”（win8为“以太网”），右键属性，在“网络”选项卡下找到“Internet协议版本4（TCP/IPV4）”，点“属性”，“选择下面的ip地址”，ip地址栏输入192.168.1.x（x为0~255之间的任意数字），不同机器的ip地址不要相同，其它不用更改，直接“确定”“关闭”。<br><img src="http://qiniu.e12e.com/2015/02/12/20150211231039.png" alt="打开网络和共享中心"><br><img src="http://qiniu.e12e.com/2015/02/12/20150211231300.png" alt="20150211231300"><br><img src="http://qiniu.e12e.com/2015/02/12/20150211231755.png" alt="选中IPv4"><br><img src="http://qiniu.e12e.com/2015/02/12/20150211232122.png" alt="设置IP"></li>
+<li>打开网络发现<br>同样是右键点击任务栏右边的网络图标，选择“打开网络和共享中心”，点击“高级共享设置”进入设置页面“启用网络发现”后保存即可。有些人可能保存完后下次打开一看还是没开启发现，这个是因为没开启SSDP Discovery服务。Win+R快捷键打开“运。行”，输入services.msc然后Enter，找到SSDP Discovery后右键“属性”，启动类型更改为“自动”即可。<br><img src="http://qiniu.e12e.com/2015/02/12/20150212102038.png" alt="更改高级共享设置"></li>
 <li>打开“网络”查看局域网是否搭建成功<br>如果桌面上有“网络”快捷方式的可以直接打开查看计算机列表中是否有其他局域网主机（查看是否有两台以上机器），若有则搭建成功。有些人的桌面上没有“网络”快捷方式的话可以打开“我的电脑”，在左边栏中打开。</li>
 </ol>
 <p><strong>第二中情况：使用路由器搭建无线局域网</strong><br>这里的无线局域网当然也适用于使用路由器的有线-有线网络、有线-无线网络环境（也就是说适用于路由器网络下的环境）。此种情况应该也适用于随身WiFi和笔记本开WiFi的环境，未测试。使用路由器的情况下连接路由器的机器默认情况下的ip地址都是在同一个网段内的，所以不用设置ip地址也行，其它设置和第一种情况的设置相同（即跳过第2步）。</p>
@@ -443,42 +443,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">奖品</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">CentOS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">网络配置</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">礼品</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">hping</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Fiddler</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">抓包</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">抓取手机数据</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">Android</a>
               </li>
              
@@ -491,7 +455,43 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Java，equals</a>
+                <a href="javascript:void(0)" class="js-tag color2">CentOS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">网络配置</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">hping</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">奖品</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">礼品</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Fiddler</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">抓取手机数据</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">抓包</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">JavaScript</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -503,15 +503,23 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Java</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">jar包</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Java，equals</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">LandLeg</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">天翼</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">JavaScript</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -523,19 +531,23 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Java</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">jar包</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">VMware</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">局域网</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Visual Studio</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">jdk</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">jre</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -551,15 +563,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Visual Studio</a>
+                <a href="javascript:void(0)" class="js-tag color2">github</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">jdk</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">jre</a>
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -579,10 +587,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">webmin</a>
               </li>
              
@@ -596,14 +600,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">金牌网吧代理</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">生活</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">github</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -623,7 +619,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">高质量图片</a>
+                <a href="javascript:void(0)" class="js-tag color3">生活</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -632,6 +628,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">免费域名</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">高质量图片</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Font Awesome</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -647,11 +651,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">音乐</a>
+                <a href="javascript:void(0)" class="js-tag color4">慕课网</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">慕课网</a>
+                <a href="javascript:void(0)" class="js-tag color5">视频解析</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -659,11 +663,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Font Awesome</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">视频解析</a>
+                <a href="javascript:void(0)" class="js-tag color3">音乐</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -715,19 +715,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">笔记</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">WAMP</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">虚拟机</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">笔记</a>
               </li>
              
               <li class="article-tag-list-item">

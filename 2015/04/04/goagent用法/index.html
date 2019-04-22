@@ -16,18 +16,18 @@
 <meta property="og:site_name" content="Coande的博客">
 <meta property="og:description" content="今天没事干，又来玩玩goagent，顺便写写。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://7xi6qe.com1.z0.glb.clouddn.com/2015/04/04/账户设置.png">
-<meta property="og:image" content="http://7xi6qe.com1.z0.glb.clouddn.com/2015/04/04/创建应用.png">
-<meta property="og:image" content="http://7xi6qe.com1.z0.glb.clouddn.com/2015/04/04/上传过程.png">
-<meta property="og:image" content="http://7xi6qe.com1.z0.glb.clouddn.com/2015/04/04/上传成功.png">
-<meta property="og:image" content="http://7xi6qe.com1.z0.glb.clouddn.com/2015/04/04/设置gae.png">
-<meta property="og:image" content="http://7xi6qe.com1.z0.glb.clouddn.com/2015/04/04/设置IE代理.png">
-<meta property="og:image" content="http://7xi6qe.com1.z0.glb.clouddn.com/2015/04/04/YouTube.png">
-<meta property="og:updated_time" content="2015-08-03T12:15:39.891Z">
+<meta property="og:image" content="http://qiniu.e12e.com/2015/04/04/账户设置.png">
+<meta property="og:image" content="http://qiniu.e12e.com/2015/04/04/创建应用.png">
+<meta property="og:image" content="http://qiniu.e12e.com/2015/04/04/上传过程.png">
+<meta property="og:image" content="http://qiniu.e12e.com/2015/04/04/上传成功.png">
+<meta property="og:image" content="http://qiniu.e12e.com/2015/04/04/设置gae.png">
+<meta property="og:image" content="http://qiniu.e12e.com/2015/04/04/设置IE代理.png">
+<meta property="og:image" content="http://qiniu.e12e.com/2015/04/04/YouTube.png">
+<meta property="og:updated_time" content="2019-04-22T17:07:59.944Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="goagent用法">
 <meta name="twitter:description" content="今天没事干，又来玩玩goagent，顺便写写。">
-<meta name="twitter:image" content="http://7xi6qe.com1.z0.glb.clouddn.com/2015/04/04/账户设置.png">
+<meta name="twitter:image" content="http://qiniu.e12e.com/2015/04/04/账户设置.png">
   
     <link rel="alternative" href="/atom.xml" title="Coande的博客" type="application/atom+xml">
   
@@ -186,11 +186,11 @@
 <p>上面废话，现在正式步入正题：</p>
 <ol>
 <li>要使用goagent的需要有一个google账号（这一步就难倒你了？<a href="http://www.e12e.com/2015/01/30/一些小技巧（持续更新）/" title="VPN就在其中" target="_blank" rel="noopener">VPN</a>|<a href="http://www.e12e.com/2015/03/21/翻墙浏览器全平台版本（windowsandroidiphoneipad-hd）/" title="借用一下别人配置好的goagent浏览器" target="_blank" rel="noopener">浏览器</a>|<a href="https://accounts.google.com/SignUp?continue=https%3A%2F%2Fwww.google.com.hk%2F&amp;hl=zh-CN" title="去注册个Google账号" target="_blank" rel="noopener">Google注册</a>）</li>
-<li>注册好后设置一下账户。将两部验证设置为停用，不够安全的应用访问权限设置为以允许。<br><img src="http://7xi6qe.com1.z0.glb.clouddn.com/2015/04/04/账户设置.png" alt="账户设置"></li>
+<li>注册好后设置一下账户。将两部验证设置为停用，不够安全的应用访问权限设置为以允许。<br><img src="http://qiniu.e12e.com/2015/04/04/账户设置.png" alt="账户设置"></li>
 <li>到GAE（Google App Engine）创建应用（Create Application），网上很多人说要验证手机号，反正我不用（注册的时候填写了个手机号，填写了个邮箱，但是不用进行验证）。<ol>
 <li>填写Application Identifier，即appid，配置goagent的时候用到，然后Check Availability。（提示一下，invalid是无效的意思，appid的长度必须在6-30个字符之间，且不能使用大写字母，第一个字符必须是个字母）。</li>
 <li>填写Application Title，随便填写。</li>
-<li>下面的设置不用管，直接Create Application即可。可以重复以上步骤创建多个应用得到多个appid（对goagent设置多个appid貌似可以更稳定一点吧）。<br><img src="http://7xi6qe.com1.z0.glb.clouddn.com/2015/04/04/创建应用.png" alt="创建应用"></li>
+<li>下面的设置不用管，直接Create Application即可。可以重复以上步骤创建多个应用得到多个appid（对goagent设置多个appid貌似可以更稳定一点吧）。<br><img src="http://qiniu.e12e.com/2015/04/04/创建应用.png" alt="创建应用"></li>
 </ol>
 </li>
 <li>到github下载goagent（当然，里面也有更详细的教程和各参数解释等等。<a href="https://github.com/goagent/goagent" title="去下载goagent" target="_blank" rel="noopener">点此直达</a>）。</li>
@@ -198,16 +198,16 @@
 <li>进入“server”文件夹，打开“uploader.bat“，按提示操作即可。<ol>
 <li>首先输入appid（即第3步提到的appid，输入第3步填入的id即可），多个appid使用”|“隔开即可。</li>
 <li>输入Google账户的Email。</li>
-<li>输入Google账户的密码。<br><img src="http://7xi6qe.com1.z0.glb.clouddn.com/2015/04/04/上传过程.png" alt="上传过程"><br><img src="http://7xi6qe.com1.z0.glb.clouddn.com/2015/04/04/上传成功.png" alt="上传成功](http://7xi6qe.com1.z0.glb.clouddn.com/2015/04/04/上传成功.png)"> 上传成功[/caption]</li>
+<li>输入Google账户的密码。<br><img src="http://qiniu.e12e.com/2015/04/04/上传过程.png" alt="上传过程"><br><img src="http://qiniu.e12e.com/2015/04/04/上传成功.png" alt="上传成功"> 上传成功[/caption]</li>
 <li>直到提示上传完成。至此，server文件夹基本用不上了。</li>
 </ol>
 </li>
-<li>进入”local“文件夹，找到”proxy.ini“文件，右键使用记事本打开，编辑一下”[gae]“下的appid即可。appid等于号后面填上刚才第6步上传了的goagent的appid，多个appid也是使用“|”隔开。<br><img src="http://7xi6qe.com1.z0.glb.clouddn.com/2015/04/04/设置gae.png" alt="设置gae"><br>（提示：第6第7步可以看成完全不相关的两步，反正你第7步设置的appid确保是上传成功的即可。所以，只要appid不去设置限制，你的appid也可以和别人分享，你也可以使用别人的appid，那些翻墙浏览器大概也是这样子的吧……）</li>
-<li>然后，右键“以管理员运行”来打开“local”文件夹下的“goagent.exe”。以管理员身份运行的作用是导入证书，导入后就不用再使用管理员身份运行了。当然，你也可以手动导入证书，这里就不说了，可以自己参考github上的教程。<br>9.goagent运行起来了，右键托盘图标选择“设置IE代理”，8086或8087端口的都可以。其中8086是使用goagent自带的规则去访问网站，即需要翻墙才能访问的网站会自动翻墙，不需要翻墙都能访问的网站就会直接连接而不使用代理，百度搜索“ip”看到的是你的当前地点；8087是全局使用代理，即访问的所有网站都使用代理进行访问，百度搜索“ip”看到的是“美国”。8088貌似是PHP的goagent，我也不懂……这里设置的是IE的代理，很多软件都是使用IE的代理设置，所以其他浏览器一般都是能够通过代理的，火狐浏览器就不行的了。不需要翻墙了记得将其设置成“禁用代理”，否则你的IE代理设置还是使用goagent，而goagent却没有启动起来就导致上不了网。<br><img src="http://7xi6qe.com1.z0.glb.clouddn.com/2015/04/04/设置IE代理.png" alt="设置IE代理"></li>
+<li>进入”local“文件夹，找到”proxy.ini“文件，右键使用记事本打开，编辑一下”[gae]“下的appid即可。appid等于号后面填上刚才第6步上传了的goagent的appid，多个appid也是使用“|”隔开。<br><img src="http://qiniu.e12e.com/2015/04/04/设置gae.png" alt="设置gae"><br>（提示：第6第7步可以看成完全不相关的两步，反正你第7步设置的appid确保是上传成功的即可。所以，只要appid不去设置限制，你的appid也可以和别人分享，你也可以使用别人的appid，那些翻墙浏览器大概也是这样子的吧……）</li>
+<li>然后，右键“以管理员运行”来打开“local”文件夹下的“goagent.exe”。以管理员身份运行的作用是导入证书，导入后就不用再使用管理员身份运行了。当然，你也可以手动导入证书，这里就不说了，可以自己参考github上的教程。<br>9.goagent运行起来了，右键托盘图标选择“设置IE代理”，8086或8087端口的都可以。其中8086是使用goagent自带的规则去访问网站，即需要翻墙才能访问的网站会自动翻墙，不需要翻墙都能访问的网站就会直接连接而不使用代理，百度搜索“ip”看到的是你的当前地点；8087是全局使用代理，即访问的所有网站都使用代理进行访问，百度搜索“ip”看到的是“美国”。8088貌似是PHP的goagent，我也不懂……这里设置的是IE的代理，很多软件都是使用IE的代理设置，所以其他浏览器一般都是能够通过代理的，火狐浏览器就不行的了。不需要翻墙了记得将其设置成“禁用代理”，否则你的IE代理设置还是使用goagent，而goagent却没有启动起来就导致上不了网。<br><img src="http://qiniu.e12e.com/2015/04/04/设置IE代理.png" alt="设置IE代理"></li>
 </ol>
 <hr>
 <p>至此，goagent已经基本设置成功了。至于怎样知道是否设置成功，你可以打开IE（推荐用IE试下），打开一个被墙的网址（<a href="https://www.youtube.com/" title="YouTube" target="_blank" rel="noopener">可以点我</a>）就知道了。</p>
-<p><img src="http://7xi6qe.com1.z0.glb.clouddn.com/2015/04/04/YouTube.png" alt="YouTube"></p>
+<p><img src="http://qiniu.e12e.com/2015/04/04/YouTube.png" alt="YouTube"></p>
 <p>至于更深一层的设置在这里就别说了，简单才是这篇博文目的，如有需要可以自己到github上查看详细教程。goagent在github的主页地址：<a href="https://goagent.github.io/" title="去看看goagent详细信息" target="_blank" rel="noopener">https://goagent.github.io/</a></p>
 <p><strong>Tips：</strong>goagent有流量限制（貌似是每个appid限制1G/天），所以你要看视频的话建议使用多个appid。</p>
 <p>2015/4/9更新：一段时间后，goagent可能会出现一大片黄绿色的字，这应改是因为goagent配置文件中一大堆原来可用的Google的ip现在不可用了，你有耐心的话可以等等看（它会自动测试一大批ip），没耐心的话你有两个选择：1.到网上找Google可用ip（可以利用一些工具，自己找），然后替换掉；2.使用goagent的php模式，详细设置方法请看另一篇博文：<a href="http://www.e12e.com/2015/04/09/goagent的php模式/" title="去看看" target="_blank" rel="noopener">goagent的php模式</a>。</p>
@@ -472,42 +472,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">奖品</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">CentOS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">网络配置</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">礼品</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">hping</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Fiddler</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">抓包</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">抓取手机数据</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">Android</a>
               </li>
              
@@ -520,7 +484,43 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Java，equals</a>
+                <a href="javascript:void(0)" class="js-tag color2">CentOS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">网络配置</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">hping</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">奖品</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">礼品</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Fiddler</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">抓取手机数据</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">抓包</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">JavaScript</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -532,15 +532,23 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Java</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">jar包</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Java，equals</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">LandLeg</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">天翼</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">JavaScript</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -552,19 +560,23 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Java</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">jar包</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">VMware</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">局域网</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Visual Studio</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">jdk</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">jre</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -580,15 +592,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Visual Studio</a>
+                <a href="javascript:void(0)" class="js-tag color2">github</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">jdk</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">jre</a>
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -608,10 +616,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">webmin</a>
               </li>
              
@@ -625,14 +629,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">金牌网吧代理</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">生活</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">github</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -652,7 +648,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">高质量图片</a>
+                <a href="javascript:void(0)" class="js-tag color3">生活</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -661,6 +657,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">免费域名</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">高质量图片</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Font Awesome</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -676,11 +680,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">音乐</a>
+                <a href="javascript:void(0)" class="js-tag color4">慕课网</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">慕课网</a>
+                <a href="javascript:void(0)" class="js-tag color5">视频解析</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -688,11 +692,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Font Awesome</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">视频解析</a>
+                <a href="javascript:void(0)" class="js-tag color3">音乐</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -744,19 +744,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">笔记</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">WAMP</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">虚拟机</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">笔记</a>
               </li>
              
               <li class="article-tag-list-item">
