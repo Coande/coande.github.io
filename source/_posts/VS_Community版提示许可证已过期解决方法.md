@@ -22,4 +22,4 @@ date: 2015-05-14 16:22:38
 
 第二个，登入微软账户到Visual Studio。登入后即可继续正常使用Visual Studio Community了。
 
-![此许可证已过期](http://7xi6qe.com1.z0.glb.clouddn.com/2015/05/14/截图20150504205401.png)
+![此许可证已过期](http://qiniu.e12e.com/2015/05/14/截图20150504205401.png)

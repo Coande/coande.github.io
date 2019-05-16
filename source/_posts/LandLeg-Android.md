@@ -7,7 +7,7 @@ categories:
 	- 作品
 ---
 拖延症拖了这么久，LandLeg Andriod版终于来了~
-![LandLeg Android](http://7xi6qe.com1.z0.glb.clouddn.com//2016/12/31/32c6e8e35e95d164.png)
+![LandLeg Android](http://qiniu.e12e.com//2016/12/31/32c6e8e35e95d164.png)
 
 <!--more -->
 ### 简要

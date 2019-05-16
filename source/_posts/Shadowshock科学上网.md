@@ -17,13 +17,13 @@ date: 2015-07-23 18:46:57
 然后，必须去找来Shadowshock账号。可以[点我](http://www.ss-link.com)去注册该网站账号，然后到用户中心查看免费Shadowshock帐号。
 
 
-![免费帐号列表](http://7xi6qe.com1.z0.glb.clouddn.com/2015/07/23/截图20150723180810.jpg)
+![免费帐号列表](http://qiniu.e12e.com/2015/07/23/截图20150723180810.jpg)
 
 
 打开Shadowshock，根据前面得到的Shadowshock账号填写，“备注”、“代理端口”都不用管，然后确定即可。
 
 
-![Shadowshock](http://7xi6qe.com1.z0.glb.clouddn.com/2015/07/23/截图20150723180937.jpg)
+![Shadowshock](http://qiniu.e12e.com/2015/07/23/截图20150723180937.jpg)
 
 
 确定后，Shadowshock就最小化到系统托盘了。右键Shadowshock的纸飞机图标，选择第一个启动系统代理即可。
@@ -32,6 +32,6 @@ date: 2015-07-23 18:46:57
 最后[点此](https://www.youtube.com/)去看看是否能打开，能打开就证明成功了。
 
 
-![Youtube](http://7xi6qe.com1.z0.glb.clouddn.com/2015/07/23/截图20150723181117.jpg)
+![Youtube](http://qiniu.e12e.com/2015/07/23/截图20150723181117.jpg)
 
 拓展：GitHub上的Shadowshock项目：[传送门](https://github.com/shadowsocks/shadowsocks)

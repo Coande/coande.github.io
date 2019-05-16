@@ -49,10 +49,10 @@ leanote采用golang+mongodb开发, 现已开源。[GitHub链接](https://github.
 
 ---
 leanote网页版：
-![leanote网页版](http://7xi6qe.com1.z0.glb.clouddn.com//2015/09/01/9ec64a9b33e61cd2.png)
+![leanote网页版](http://qiniu.e12e.com//2015/09/01/9ec64a9b33e61cd2.png)
 
 leanote Windows版：
-![leanote Windows版](http://7xi6qe.com1.z0.glb.clouddn.com//2015/09/01/aa3b54eeab612c36.png)
+![leanote Windows版](http://qiniu.e12e.com//2015/09/01/aa3b54eeab612c36.png)
 
 ---
 我来说说我的感受，刚开始用的是evernote，界面有点丑；后来用有道云笔记，界面漂亮，但是功能残废，记代码很难看；再找找支持Markdown的，找到为知笔记，同时也找到了leanote，用了下觉得为知和leanote都很不错，leanote有个突出特点就是支持博客功能，可以将自己的笔记发布成博客，博客的主题也可以自定义（可以自己制作），看了leanote的介绍，我也很佩服leanote的开发者，他各项功能都力求完美，尽管现在初创还不够很完美，我还是相信将来它会变得很完美。

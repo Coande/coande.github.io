@@ -27,48 +27,48 @@ date: 2015-06-10 18:04:52
 
 - 首先，去到这个网址用你的电子邮箱申请个账号：[http://contest.appinventor.mit.edu/login?locale=zh_CN](http://contest.appinventor.mit.edu/login?locale=zh_CN)，并到收件箱复制链接在浏览器中打开，设定密码。
 
-![登陆页面](http://7xi6qe.com1.z0.glb.clouddn.com/2015/06/10/登陆.jpg)
+![登陆页面](http://qiniu.e12e.com/2015/06/10/登陆.jpg)
 
-![注册账号或重设密码](http://7xi6qe.com1.z0.glb.clouddn.com/2015/06/10/注册账号或重设密码.jpg)
+![注册账号或重设密码](http://qiniu.e12e.com/2015/06/10/注册账号或重设密码.jpg)
 
 
 - 然后转到服务条款，点“I accept the terms of service!”同意服务条款即可。
 
-![服务条款](http://7xi6qe.com1.z0.glb.clouddn.com/2015/06/10/Terms of Service.png)
+![服务条款](http://qiniu.e12e.com/2015/06/10/Terms of Service.png)
 
 
 - 然后又转到另一个页面，上面一个欢迎窗口。“Continue”即可。
 
-![欢迎窗口](http://7xi6qe.com1.z0.glb.clouddn.com/2015/06/10/MIT App Inventor 2.png)
+![欢迎窗口](http://qiniu.e12e.com/2015/06/10/MIT App Inventor 2.png)
 
 
 - 然后，你会发现全是英文的。别急，可是设置成中文的：
 
-![设置环境语言](http://7xi6qe.com1.z0.glb.clouddn.com/2015/06/10/设置环境语言.jpg)
+![设置环境语言](http://qiniu.e12e.com/2015/06/10/设置环境语言.jpg)
 
 
 - 可能又会弹出欢迎窗口，继续即可。
 
 - 这时候，你是没有任何项目的（项目也就是Android应用程序），需要新建项目：
 
-![新建项目](http://7xi6qe.com1.z0.glb.clouddn.com/2015/06/10/新建项目.jpg)
+![新建项目](http://qiniu.e12e.com/2015/06/10/新建项目.jpg)
 
 
 - 然后就可以从左边的组件面板中拖取自己需要的组件到中间工作面板的手机屏幕视图上，拖取的组件默认是从左上角开始排的，不是你想拖到哪就拖到哪的，但也可以根据自己的需要进行设定布局方式，这些自己去探索。
 
-![组件设计](http://7xi6qe.com1.z0.glb.clouddn.com/2015/06/10/MIT App Inventor 2 测试版.png)
+![组件设计](http://qiniu.e12e.com/2015/06/10/MIT App Inventor 2 测试版.png)
 
 
 - 当手机屏幕视图中有组件时，选择相应组件，在右则即可看到改组件的相关属性，可以根据需要进行设定。
 
 - 更进一步地，你需要设置相应组件怎样听你的使唤，还需要就行逻辑设计，搭积木式进行设计。点击右上角的逻辑设计按钮，即可切换到逻辑设计视图（需要返回干才那界面点一下旁边的组件设计按钮即可）。点击一下左边的模块组件就会在工作面板弹出该组件的相关零件，点击一下就可以放在工作面板中，接下来就由你自由发挥了。
 
-![逻辑设计](http://7xi6qe.com1.z0.glb.clouddn.com/2015/06/10/MIT App Inventor 2 测试版3.png)
+![逻辑设计](http://qiniu.e12e.com/2015/06/10/MIT App Inventor 2 测试版3.png)
 
 
 - 一切搞定好后，你就可以对你的这个工程进行打包成Android程序apk格式，然后下载回来就可以安装到手机了。大功告成！
 
-![打包apk](http://7xi6qe.com1.z0.glb.clouddn.com/2015/06/10/打包apk.jpg)
+![打包apk](http://qiniu.e12e.com/2015/06/10/打包apk.jpg)
 
 ### **Enjoy it!**
 

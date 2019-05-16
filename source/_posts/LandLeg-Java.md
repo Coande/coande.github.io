@@ -8,7 +8,7 @@ categories:
 ---
 LandLeg Java版低调发布，这个版本是根据**XenK0u**的地腿php版移植并增强的，灰常感谢**XenK0u**。
 
-![LandLeg v1.0](http://7xi6qe.com1.z0.glb.clouddn.com//2016/12/31/784942f4ae3c4657.png)
+![LandLeg v1.0](http://qiniu.e12e.com//2016/12/31/784942f4ae3c4657.png)
 
 ## 地腿是啥？
 广东**\*天\*翼\*校\*园\*第三方客户端。**没有WiFi共享检测，拨号功能增强。

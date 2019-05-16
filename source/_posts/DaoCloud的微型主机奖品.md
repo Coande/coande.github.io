@@ -7,4 +7,4 @@ categories:
 ---
 感谢[DaoCloud](http://www.daocloud.io/)。
 <!--more-->
-![微型主机](http://7xi6qe.com1.z0.glb.clouddn.com//2015/10/14/f547a43951d7a643.jpg)
+![微型主机](http://qiniu.e12e.com//2015/10/14/f547a43951d7a643.jpg)

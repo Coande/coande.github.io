@@ -5,12 +5,12 @@ tags:
 categories:
 	- 生活
 ---
-![《docker源码分析》和鼠标垫](http://7xi6qe.com1.z0.glb.clouddn.com//2015/09/06/67c917c9c59fcd13.jpg)<!--more-->
+![《docker源码分析》和鼠标垫](http://qiniu.e12e.com//2015/09/06/67c917c9c59fcd13.jpg)<!--more-->
 除了赠书，还附送了个鼠标垫。这鼠标垫是发错了吧……
 
-![《docker源码分析》作者孙宏亮大神的签名](http://7xi6qe.com1.z0.glb.clouddn.com/2015/09/06/d86e3a5abdab1811.jpg)
+![《docker源码分析》作者孙宏亮大神的签名](http://qiniu.e12e.com/2015/09/06/d86e3a5abdab1811.jpg)
 
-![DaoCloud敬赠水印](http://7xi6qe.com1.z0.glb.clouddn.com/2015/09/06/3da415b6dab4845e.jpg)
+![DaoCloud敬赠水印](http://qiniu.e12e.com/2015/09/06/3da415b6dab4845e.jpg)
 
 这赠书是八月份的邀请注册获得的，九月份还有这样的活动，礼品更加丰富。只要邀请8个人注册成功并相应验证即可获得一本《docker源码分析》。只要你人脉够好，可以获得更丰厚的奖品。活动页面链接：[点此直达](https://www.daocloud.io/invite_friends)。如果你也要注册，可以用我的邀请链接：[点此接受邀请](https://account.daocloud.io/signup?invite_code=46tqaaeov9t5e1khevz0)。
 
