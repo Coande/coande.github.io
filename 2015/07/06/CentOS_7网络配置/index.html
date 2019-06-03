@@ -5,14 +5,14 @@
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="dns-prefetch" href="http://e12e.com">
+  <link rel="dns-prefetch" href="https://e12e.com">
   <title>CentOS 7网络配置 | Coande的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="最近玩玩Linux，用的是CentOS 7，虚拟机里面安装，没有图形化界面。昨天，当学到RPM包yum在线管理的时候，网络配置难到了我，我自己搞了好久都搞不定，后来请大神帮忙总算配置好了。下面记录一下配置过程和一些方法。">
-<meta name="keywords" content="CentOS,Linux,网络配置">
+<meta name="keywords" content="Linux,CentOS,网络配置">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CentOS 7网络配置">
-<meta property="og:url" content="http://e12e.com/2015/07/06/CentOS_7网络配置/index.html">
+<meta property="og:url" content="https://e12e.com/2015/07/06/CentOS_7网络配置/index.html">
 <meta property="og:site_name" content="Coande的博客">
 <meta property="og:description" content="最近玩玩Linux，用的是CentOS 7，虚拟机里面安装，没有图形化界面。昨天，当学到RPM包yum在线管理的时候，网络配置难到了我，我自己搞了好久都搞不定，后来请大神帮忙总算配置好了。下面记录一下配置过程和一些方法。">
 <meta property="og:locale" content="zh_CN">
@@ -62,7 +62,7 @@
 			
 				<li><a href="/">主页</a></li>
 	        
-				<li><a href="/others/aboutMe">About Me</a></li>
+				<li><a href="/others/about-me/">关于我</a></li>
 	        
 			</ul>
 		</nav>
@@ -81,8 +81,6 @@
 			<div class="social">
 				
 					<a class="github" target="_blank" href="https://www.github.com/coande/" title="github"><i class="icon-github"></i></a>
-		        
-					<a class="zhihu" target="_blank" href="http://zhihu.com/people/Coande" title="zhihu"><i class="icon-zhihu"></i></a>
 		        
 					<a class="mail" target="_blank" href="mailto:e12e@qq.com" title="mail"><i class="icon-mail"></i></a>
 		        
@@ -123,8 +121,6 @@
 					
 						<a class="github" target="_blank" href="https://www.github.com/coande/" title="github"><i class="icon-github"></i></a>
 			        
-						<a class="zhihu" target="_blank" href="http://zhihu.com/people/Coande" title="zhihu"><i class="icon-zhihu"></i></a>
-			        
 						<a class="mail" target="_blank" href="mailto:e12e@qq.com" title="mail"><i class="icon-mail"></i></a>
 			        
 				</div>
@@ -136,7 +132,7 @@
 				
 					<li style="width: 50%"><a href="/">主页</a></li>
 		        
-					<li style="width: 50%"><a href="/others/aboutMe">About Me</a></li>
+					<li style="width: 50%"><a href="/others/about-me/">关于我</a></li>
 		        
 				</ul>
 			</nav>
@@ -204,11 +200,11 @@ DNS1=114.114.114.114
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">CentOS</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">CentOS</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
@@ -279,7 +275,7 @@ DNS1=114.114.114.114
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://e12e.com/2015/07/06/CentOS_7网络配置/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://e12e.com/2015/07/06/CentOS_7网络配置/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -432,31 +428,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">时光</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">AI</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">LOGO</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">工具</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">CentOS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">网络配置</a>
+                <a href="javascript:void(0)" class="js-tag color3">时光</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -469,6 +445,26 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">在线开开发</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">AI</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">LOGO</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">CentOS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">网络配置</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -496,15 +492,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">JavaScript</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">JTree</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">JScrollPane</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">JavaScript</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -536,14 +532,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">VMware</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">局域网</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">Visual Studio</a>
               </li>
              
@@ -556,15 +544,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">discuz</a>
+                <a href="javascript:void(0)" class="js-tag color2">VMware</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">smtp</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">邮件设置</a>
+                <a href="javascript:void(0)" class="js-tag color4">局域网</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -592,11 +576,23 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">webmin</a>
+                <a href="javascript:void(0)" class="js-tag color2">discuz</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">smtp</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">邮件设置</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">技巧</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">webmin</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -628,6 +624,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">高质量图片</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">hosts</a>
               </li>
              
@@ -636,7 +636,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">高质量图片</a>
+                <a href="javascript:void(0)" class="js-tag color3">Font Awesome</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -652,7 +652,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Font Awesome</a>
+                <a href="javascript:void(0)" class="js-tag color3">音乐</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -668,10 +668,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">音乐</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">PKM</a>
               </li>
              
@@ -684,15 +680,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">博客恢复</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">驱动</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Dreamweaver</a>
+                <a href="javascript:void(0)" class="js-tag color1">shell</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Photoshop</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">博客恢复</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -704,19 +704,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Dreamweaver</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">IDE</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">在线编程</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">shell</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Photoshop</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -820,7 +816,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             </li>
           
             <li class="search-li">
-              <a href="http://www.omano.cn" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>欧曼博客</a>
+              <a href="http://www.omano.cn/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>欧曼博客</a>
             </li>
           
             <li class="search-li">
