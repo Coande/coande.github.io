@@ -3,14 +3,14 @@
 menu:
   主页: /
   # 随笔: /tags/随笔/
-  About Me: /others/aboutMe
+  关于我: /others/about-me/
 
 # SubNav
 subnav:
   github: "https://www.github.com/coande/"
   # weibo: "#"
   # rss: "#"
-  zhihu: "http://zhihu.com/people/Coande"
+  # zhihu: "http://zhihu.com/people/Coande"
   #qq: "#"
   #weixin: "#"
   #jianshu: "#"
@@ -126,7 +126,7 @@ friends:
   steffan的博客: http://steffan.cn/
   XenK0u的博客: http://henbukexue.science/
   Xiang的博客: http://nooby.cn/
-  欧曼博客: http://www.omano.cn
+  欧曼博客: http://www.omano.cn/
   flying0917的博客: http://soopen.cn/
   童年的博客: http://tongnian.leanote.com/
 
