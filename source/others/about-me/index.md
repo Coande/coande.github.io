@@ -1,12 +1,13 @@
 title: 关于我
+date: 2019-07-25 13:12:58
 ---
 
-Coande，来自广东云浮，专科，软件技术专业。学生时期捣玩过 Android、Linux 和各种有趣的东西，工作时搞过 Java 和 Node.js 的后台、JQuery 和 Vue.js 的前端，对网络安全有所了解，算是涉猎广泛吧。有两年+工作经验，现已离职，寻求后台相关工作中，求收留……
+Coande，意为 Code and Debug，本人唯一 ID。曾为[乌云](http://www.wooyun.org)白帽子，现活跃于[漏洞盒子](https://www.vulbox.com)，常逛[V2EX](https://v2ex.com)。在校时捣玩过 Android、Linux 和各种有意思的东西，工作时搞过 Java / Node.js 的后台、JQuery / Vue.js 的前端。有三年项目经验，现已离职，寻求后台相关工作ing……
 
-### 开源项目：
+### 开源项目
 
 - [co-trans-ext](https://github.com/Coande/co-trans-ext)
-一个集搜狗翻译、百度翻译、谷歌翻译、有道翻译、金山词霸于一体的翻译扩展。各平台可随时切换，取长补短，更适合于阅读各领域的文档。不止于翻译，解析详细，更利于对各门语言的深入学习与理解。支持划词翻译和网页翻译。目前1000+用户。
+一个集搜狗翻译、百度翻译、谷歌翻译、有道翻译、金山词霸于一体的翻译扩展。各平台可随时切换，取长补短，更适合于阅读各领域的文档。不止于翻译，解析详细，更利于对各门语言的深入学习与理解。支持划词翻译和网页翻译。目前3000+安装量，日活跃用户400+。
 
 - [co-wechat-life-export](https://github.com/Coande/co-wechat-life-export)
 一个无需 root，用于导出朋友圈内容的 Auto.js Pro 脚本项目。
@@ -23,14 +24,21 @@ Coande，来自广东云浮，专科，软件技术专业。学生时期捣玩�
 - [慕课网视频在线解析](/2016/05/29/慕课网视频在线解析/)
 可以解析慕课网某个课程所有视频下载地址的网站。
 
-- [LandLeg_Android](https://github.com/Coande/LandLeg_Android)
+- [LandLeg_Android](/2016/05/01/LandLeg-Android/)
 天翼校园第三方客户端。没有WiFi共享检测，拨号功能增强，Android版。
 
-- [LandLeg_Java](https://github.com/Coande/LandLeg_Java)
+- [LandLeg_Java](/2016/04/16/LandLeg-Java/)
 天翼校园第三方客户端。没有WiFi共享检测，拨号功能增强，java版。
 
 - [慕课网视频批量下载工具](/2016/02/02/慕课网视频批量下载工具/)
 可以批量下载慕课网某个课程视频的工具。
+
+
+### 非开源项目
+
+- [小程序：地图标记工具](/2019/06/28/小程序：地图标记工具/)
+提供便捷的地图标记、路线规划、导航等服务。目前日活跃用户50左右。
+
 
 ### 捐赠
 
