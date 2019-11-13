@@ -1,0 +1,28 @@
+[{
+	"nick": "Anonymous",
+	"ACL": {
+		"*": {
+			"read": true
+		}
+	},
+	"mail": "",
+	"ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36",
+	"insertedAt": {
+		"__type": "Date",
+		"iso": "2019-10-05T02:31:23.819Z"
+	},
+	"pid": "6400499193823101697",
+	"link": "",
+	"comment": "<p><a class=\"at\" href=\"#6400499193823101697\">@ZC </a> , 英文的意思就是：”登录在线账号以申请许可证。“啊</p>\n",
+	"url": "/2015/05/14/VS_Community版提示许可证已过期解决方法/",
+	"rid": "6400499193823101697",
+	"objectId": "5d980080ba39c80068e3194a",
+	"createdAt": {
+		"__type": "Date",
+		"iso": "2019-10-05T02:31:28.291Z"
+	},
+	"updatedAt": {
+		"__type": "Date",
+		"iso": "2019-10-05T02:31:28.291Z"
+	}
+}]
