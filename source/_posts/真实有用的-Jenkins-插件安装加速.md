@@ -44,7 +44,7 @@ https://jenkins-zh.cn/wechat/articles/2019/11/2019-11-11-update-center-mirror-an
 当然首次使用 Jenkins 时提示安装插件就不要安装了，可以进入后台再按需安装。可能安装中文化插件 localization-zh-cn 时也会很慢，可以借助梯子去 Jenkins 官网搜到该插件及其依赖插件下载下来再上传安装。
 
 
-> 其实还有一个方法，可以下载国内定制版的 Jenkins：https://github.com/jenkins-zh/jenkins-formulas，直接把 localization-zh-cn 也安装配置好了。
+> 其实还有一个方法，可以下载国内定制版的 Jenkins：https://github.com/jenkins-zh/jenkins-formulas ，直接把 localization-zh-cn 也安装配置好了。
 
 
 
