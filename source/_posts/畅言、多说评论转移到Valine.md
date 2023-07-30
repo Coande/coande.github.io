@@ -1,5 +1,5 @@
 ---
-title: 畅言、多说评论转移到Valine
+title: 畅言、多说评论转移到 Valine
 date: 2019-10-04 01:20:25
 tags:
 ---
@@ -117,12 +117,28 @@ https://github.com/Coande/duoshuo-to-valine
 
 https://github.com/litten/hexo-theme-yilia/pull/646
 
-改完后重新生成一下主题。
+改完后在主题目录下`npm run dist`重新生成一下主题。
 
-安装依赖是可能 `node-sass` 会报 404，原来`3.9.3`版本已经不存在了，改为`4.9.1`就好了。
 
-重新生成主题后，记得删掉`node-modules`目录，否则可能导致以下错误：
+> 重新生成主题时可能会如下卡住，实测已经生成完毕，强制退出也没问题。issue：https://github.com/litten/hexo-theme-yilia/issues/695
+```
+Child html-webpack-plugin for "..\layout\_partial\script.ejs":
+        + 3 hidden modules
+Child html-webpack-plugin for "..\layout\_partial\css.ejs":
+        + 3 hidden modules
+Child extract-text-webpack-plugin:
+        + 2 hidden modules
+Child extract-text-webpack-plugin:
+        + 5 hidden modules
+Child extract-text-webpack-plugin:
+        + 8 hidden modules
+```
 
+
+> 安装依赖是可能 `node-sass` 会报 404，原来`3.9.3`版本已经不存在了，改为`4.9.1`就好了。
+
+
+> 重新生成主题后，记得删掉`node-modules`目录，否则可能导致以下错误：
 ```
 Ineffective mark-compacts near heap limit Allocation failed - JavaScript heap out of memory
 ```

@@ -33,7 +33,8 @@
     line-height: 25px;
     overflow: hidden;
     text-overflow: ellipsis;
-    display: -webkit-box;
+    // 处理不居中的问题
+    // display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
 }
