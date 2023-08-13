@@ -9,7 +9,9 @@ toc: true
 
 
 
-**&lt;!--** more **--&gt;**
+<div>
+<!-- more -->
+</div>
 
 ## 初始文件和状态：
 
@@ -17,8 +19,6 @@ toc: true
 * commit b: file b
 * commit c: file c
 * staged: file d
-
-‍
 
 ​![img_15](assets/img_15-20230814000822-4nrfncd.png)  
 ​![img_6](assets/img_6-20230814000841-g5lgebi.png)  
