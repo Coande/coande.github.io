@@ -9,13 +9,13 @@ toc: true
 
 
 
+**&lt;!--** more **--&gt;**
+
 ## 初始文件和状态：
 
 * commit a: file a
-
 * commit b: file b
 * commit c: file c
-
 * staged: file d
 
 ‍
