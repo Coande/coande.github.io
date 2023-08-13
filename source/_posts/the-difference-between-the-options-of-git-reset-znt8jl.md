@@ -20,9 +20,9 @@ toc: true
 * commit c: file c
 * staged: file d
 
-​![img_15](assets/img_15-20230814000822-4nrfncd.png)  
-​![img_6](assets/img_6-20230814000841-g5lgebi.png)  
-​![img_5](assets/img_5-20230814000849-cutdid3.png)​
+​![](http://qiniu.e12e.com/default/20230814014404.png)  
+​![](http://qiniu.e12e.com/default/20230814014521.png)​  
+​​![](http://qiniu.e12e.com/default/20230814014649.png)​​
 
 ## 操作：
 
@@ -33,23 +33,23 @@ toc: true
 
 ### Soft
 
-​![img_12](assets/img_12-20230814000946-tocwhkj.png)  
-​![img_11](assets/img_11-20230814000955-ge6645y.png)​
+​![](http://qiniu.e12e.com/default/20230814014703.png)  
+​![](http://qiniu.e12e.com/default/20230814014713.png)​
 
 ### Mixed
 
-​![img_9](assets/img_9-20230814001007-4k4k3e5.png)  
+​![](http://qiniu.e12e.com/default/20230814014726.png)​
 
-​![img_10](assets/img_10-20230814001022-bio7ggt.png)​
+​![](http://qiniu.e12e.com/default/20230814014734.png)​
 
 ## Hard
 
-​![img_13](assets/img_13-20230814001033-16pj1ze.png)  
+​![](http://qiniu.e12e.com/default/20230814014753.png)​
 
-​![img_14](assets/img_14-20230814001041-cl6fcu3.png)​
+​![](http://qiniu.e12e.com/default/20230814014806.png)​
 
 ### Keep
 
-​![img_1](assets/img_1-20230814001050-inc98vt.png)  
+​![](http://qiniu.e12e.com/default/20230814014813.png)​
 
-​![img_3](assets/img_3-20230814001059-5marxeh.png)​
+​![](http://qiniu.e12e.com/default/20230814014824.png)​
